@@ -2,7 +2,7 @@
 
 Official code and model release for:
 
-**First Make It Playable, Then Make It Good: Staged Interaction Learning for Small Dialogue-Game Agents**
+**First Make It Playable, Then Make It Good: Staged Interaction Learning for Small Dialogue-Game Agents** a submission for the challenge https://lm-playschool.github.io/challenge/
 
 
 [🤗 Hugging Face](https://huggingface.co/syedhuq/qwen-guideplay-2b)
