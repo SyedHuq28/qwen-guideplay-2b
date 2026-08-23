@@ -7,7 +7,7 @@ Official code and model release for:
 **Syed Mahbubul Huq · Pranava Madhyastha**
 City St George's, University of London · The Alan Turing Institute
 
-[🤗 Model on Hugging Face](https://huggingface.co/syedhuq/qwen-guideplay-2b)
+[🤗 Hugging Face](https://huggingface.co/syedhuq/qwen-guideplay-2b)
 
 ---
 
@@ -232,19 +232,6 @@ All reported experimental results correspond to single training runs rather than
 
 ---
 
-## Repository structure
-
-The repository contains the code used for the staged training and evaluation pipeline.
-
-```text
-.
-├── ...
-```
-
-> Update this section with the final repository directory structure before release.
-
----
-
 ## Reproducing the experiments
 
 The overall reproduction pipeline is:
@@ -286,47 +273,6 @@ We also evaluated several alternative training strategies:
 | HEM-Mix                           |     51.41 |     40.60 |
 | **Qwen-GuidePlay-2B**             | **57.12** | **42.68** |
 
-Heavier replay-and-repair, Q-like weighting, and loss-based hard-example mining did not outperform the final lightweight teacher-guided approach.
 
----
-
-## Limitations
-
-Qwen-GuidePlay-2B was selected using public validation results, so public validation performance may overestimate expected private-test performance.
-
-The method does not use:
-
-* online reinforcement learning;
-* explicit search;
-* explicit planning.
-
-The teacher is constrained to judging and repairing actions derived from successful trajectories rather than proposing new strategies.
-
----
-
-## Citation
-
-If you use this model or code, please cite our paper:
-
-```bibtex
-@inproceedings{huq2026qwenguideplay,
-  title     = {First Make It Playable, Then Make It Good: Staged Interaction Learning for Small Dialogue-Game Agents},
-  author    = {Huq, Syed Mahbubul and Madhyastha, Pranava},
-  year      = {2026}
-}
-```
-
-> Replace the BibTeX entry with the official proceedings citation once available.
-
----
-
-## Links
-
-* 🤗 **Model:** https://huggingface.co/syedhuq/qwen-guideplay-2b
-* 💻 **Code:** https://github.com/SyedHuq28/qwen-guideplay-2b
-
----
-
-## Acknowledgements
 
 This work uses the Playpen dialogue-game benchmark and builds on Qwen3.5-2B as the base model.
