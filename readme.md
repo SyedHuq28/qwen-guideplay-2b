@@ -241,5 +241,3 @@ We also evaluated several alternative training strategies:
 | **Qwen-GuidePlay-2B**             | **57.12** | **42.68** |
 
 
-
-This work uses the Playpen dialogue-game benchmark and builds on Qwen3.5-2B as the base model.
