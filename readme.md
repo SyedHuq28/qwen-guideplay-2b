@@ -4,8 +4,6 @@ Official code and model release for:
 
 **First Make It Playable, Then Make It Good: Staged Interaction Learning for Small Dialogue-Game Agents**
 
-**Syed Mahbubul Huq · Pranava Madhyastha**
-City St George's, University of London · The Alan Turing Institute
 
 [🤗 Hugging Face](https://huggingface.co/syedhuq/qwen-guideplay-2b)
 
