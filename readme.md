@@ -202,13 +202,9 @@ https://huggingface.co/syedhuq/qwen-guideplay-2b
 
 ## Evaluation
 
-Evaluation uses **Playpen 3.7.0** and the public Playpen validation pipeline.
+Evaluation uses **Playpen 3.7.0** and the public Playpen validation pipeline (https://github.com/lm-playpen/playpen).
 
-The standard evaluation command is:
 
-```bash
-playpen eval <model> --suite all
-```
 
 For local Hugging Face evaluation, the model uses:
 
@@ -230,33 +226,6 @@ All reported experimental results correspond to single training runs rather than
 
 ---
 
-## Reproducing the experiments
-
-The overall reproduction pipeline is:
-
-```text
-Playpen training data
-        ↓
-successful trajectory filtering
-        ↓
-Stage 1: Success SFT
-        ↓
-trajectory factorisation
-        ↓
-Stage 2: Value-weighted turn-level SFT
-        ↓
-teacher judging + repair generation
-        ↓
-Stage 3: Teacher-guided SFT
-        ↓
-merge LoRA adapter
-        ↓
-Playpen evaluation
-```
-
-Exact commands should be added here according to the scripts included in this repository.
-
----
 
 ## Ablations
 
